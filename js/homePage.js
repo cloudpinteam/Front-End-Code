@@ -3,7 +3,6 @@ $(document).ready(function(){
     animate({top: 50, opacity: 1}, 1200);
     
   $("#upload").click(function(){
-
     $("h1").fadeOut(500);
     $("#icon").fadeOut(500);
     $("#upload").fadeOut(500);
@@ -26,17 +25,6 @@ $(document).ready(function(){
 
   });
 });
-
-
-
-
-
-   
-
-
-
-
-    // $("#newImage").fadeIn(500);
 
 
    
