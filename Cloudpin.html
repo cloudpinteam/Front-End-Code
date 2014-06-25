@@ -13,7 +13,6 @@
     <link href="css/starter-template.css" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/homePage.js"></script>
 
   <script type="text/javascript"> //allows you to upload
     function performClick(node) {
@@ -29,7 +28,7 @@
     document.getElementById("idd").style.visibility="visible";
     }
   </script>
-
+  
 
 
 </head>
@@ -59,7 +58,7 @@
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#" id="GoPro" >Go Pro</a></li>
+            <li class="active"><a href="#" id="GoPro" >Create An Account</a></li>
             <li><a href="#" id="SignIn">Sign In</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -67,14 +66,15 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container container2">
       <div class="starter-template">
         <section>
           <img id = "icon" src = "img/Layer-5.png" width = "75" height="104">
-          <h1>Fast, simple file-sharing</h1>
+          <h1>The easiest way to share <div id="rotate"> <div>content.</div> <div> files. </div> <div> media. </div> <div>coupons.</div> </div></h1>
+          <h2> Quickly share files with an easy to remember PIN. </h2>
           <button id="upload" 
               onclick="performClick(document.getElementById('theFile')); newPage();">Click here to upload</button>
-          <h2>(Everything you upload is encrypted and never stored on the web)</h2>
+          <!--<h2>(Uploads are encrypted and never stored on the web.<span> How?</span>)</h2>-->
         </section>
         <footer class="navbar-fixed-bottom">
           <a href id= "how"> <span>How It Works</span></a>
@@ -102,5 +102,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script> 
+        <script src="js/homePage.js"></script>
+        <script src="transition.js"></script>
+
   </body>
 </html>
