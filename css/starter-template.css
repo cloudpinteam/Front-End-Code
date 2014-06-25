@@ -29,25 +29,25 @@ body {
 
 .navbar-fixed-bottom > a{
 	margin-bottom: 25px;
-	font-size: 18px;
+	font-size: 16px;
 	color:#6a8691;
 }
 .form-control::-moz-placeholder {
   color: #2b2d2e;
   opacity: 1;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 17px;
 }
 .form-control:-ms-input-placeholder {
   color: #2b2d2e;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 17px;
 
 }
 .form-control::-webkit-input-placeholder {
   color: #2b2d2e;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 17px;
 
 }
 .form-control {
@@ -141,8 +141,8 @@ section h1 {
 	text-shadow: 0 1px 0 rgba(0,0,0,.75); /* drop shadow */
 
 
-	padding-top:22px;
-	padding-bottom:22px;
+	padding-top:20px;
+	padding-bottom:20px;
 	padding-left: 14%;
 	padding-right:14%;
 
