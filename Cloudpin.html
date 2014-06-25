@@ -52,7 +52,7 @@
           </button>
           <form method = "get" action="<?php $_SERVER['PHP_SELF']?>" class="navbar-form navbar-right">
             <div class="input-group">
-              <input type="Search" placeholder="Search by PIN" class="form-control" />
+              <input type="Search" placeholder="Search by PIN" class="form-control search-bar" />
             </div>
           </form>
         </div> <!--end navbar-header-->
@@ -70,13 +70,14 @@
     <div class="container">
       <div class="starter-template">
         <section>
-          <img id = "icon" src = "img/icon.png">
+          <img id = "icon" src = "img/Layer-5.png" width = "75" height="104">
           <h1>Fast, simple file-sharing</h1>
           <button id="upload" 
               onclick="performClick(document.getElementById('theFile')); newPage();">Click here to upload</button>
           <h2>(Everything you upload is encrypted and never stored on the web)</h2>
         </section>
-        <footer>
+        <footer class="navbar-fixed-bottom">
+          <a href id= "how"> <span>How It Works</span></a>
           <a href id= "about"> <span>About</span></a>
           <a href id="blog"><span>Blog</span></a>
           <a href id="privacy"><span>Privacy</span></a>
