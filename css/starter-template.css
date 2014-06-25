@@ -156,25 +156,25 @@ section h1 {
 	display:inline;
 	outline:none;
 
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-  transition: border .25s linear, color .25s linear, background-color .25s linear;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
 
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px; /* border radius */
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box; /* prevents bg color from leaking outside the border */
-background-color: #00adef; /* layer fill content */
-border: 2px solid #11abe5; /* stroke */
--moz-border-radius: 7px;
--webkit-border-radius: 7px;
-border-radius: 7px; /* border radius */
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box; /* prevents bg color from leaking outside the border */
-background-color: #35bdef; /* layer fill content */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #00adef; /* layer fill content */
+	border: 2px solid #11abe5; /* stroke */
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #35bdef; /* layer fill content */
 
 
 }
@@ -252,7 +252,33 @@ footer {
 	width:1000000px;
 }
 
+#done {
+	background-color: #69d387;
+	color: #fff;
+	font-family: "Brandon Text";
+	font-size: 24px;
+	font-weight: bold;
+	outline:none;
+	text-shadow: 0 1px 0 rgba(0,0,0,.75);
+	border: 0px;
 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left: 4%;
+	padding-right:4%;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
+
+	display: inline;
+}
 
 
 
