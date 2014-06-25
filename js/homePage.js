@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(this).text("Upload more").fadeIn();
  	
 	 document.getElementById("icon").src = "img/grayIcon.png";
-    $("#icon").fadeIn(500);
+    $("#icon").fadeIn(500); // this uploads the gray icon pin.
 		
   });
 });
