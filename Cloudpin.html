@@ -53,18 +53,72 @@
           </button>
           <form method = "get" action="searchPage.html" class="navbar-form navbar-right">
             <div class="input-group">
-              <input type="Search" placeholder="Search by PIN" class="form-control search-bar" />
+              <input type="Search" placeholder="Search by PIN" class="form-control search-bar" name = "pin"/>
             </div>
           </form>
         </div> <!--end navbar-header-->
 
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#" id="GoPro" >Create Account</a></li>
-            <li><a href="#" id="SignIn">Sign In</a></li>
+        
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#" id="GoPro" >
+                  Go Pro
+                </a>
+              </li>  
 
-          </ul>
-        </div><!--/.nav-collapse -->
+
+
+
+
+
+
+                    
+            </ul>
+         
+
+      <nav>
+        <ul>
+          <li id="login">
+            <a id="login-trigger" href="#">
+              Sign in
+            </a>
+            <div id="login-content">
+              <form>
+                <fieldset id="inputs">
+                  <input id="username" type="email" name="Email" placeholder="Email" required>   
+                  <input id="password" type="password" name="Password" placeholder="Password" required>
+                </fieldset>
+                <fieldset id="actions">
+                  <input type="submit" id="submit" value="Sign in">
+                </fieldset>
+              </form>
+            </div>                     
+          </li>
+        </ul>
+      </nav>
+
+  </div> 
+
+
+
+
+
+
+
+
+
+        
+
+     
+
+
+
+
+
+
+
+
 
       </div>
     </div>
@@ -93,7 +147,7 @@
           </div>
           <!--<h2>(Uploads are encrypted and never stored on the web.<span> How?</span>)</h2>-->
         </section>
-        <footer class="navbar-fixed-bottom">
+        <footer>
           <a href id= "how"> <span>How It Works</span></a>
           <a href id= "about"> <span>About</span></a>
           <a href id="blog"><span>Blog</span></a>
