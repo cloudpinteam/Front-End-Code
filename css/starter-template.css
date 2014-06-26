@@ -282,38 +282,6 @@ footer {
 
 
 
-<<<<<<< HEAD
-    margin-top: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: 1px solid #000;
-    font-size: 14px;
-    clear: both;
-    opacity: 1;
-    -moz-transition: opacity 1s linear;
-    -o-transition: opacity 1s linear;
-    -webkit-transition: opacity 1s linear;
-    width:50%;
-
-
-    -moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px; /* border radius */
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box; /* prevents bg color from leaking outside the border */
-background-color: #ecf0f5; /* layer fill content */
-
-
-  }
-=======
->>>>>>> FETCH_HEAD
-
-
-
-
-
-
 
 
 
