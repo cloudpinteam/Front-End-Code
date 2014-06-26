@@ -4,7 +4,7 @@ $(document).ready(function(){
     
   $("#upload").click(function(){
     $("h1").fadeOut(500);
-    // $("h2").fadeOut(500);
+    $("h2").fadeOut(500);
     $("#icon").fadeOut(500);
     $("#upload").fadeOut(500);
 
@@ -26,21 +26,20 @@ $(document).ready(function(){
 		newButton.id = "done";
 		buttonParent.appendChild(newButton);
 
+  });
+});
 
-// function createProgressBar () {
+
+function createProgressBar () {
   var Progress = document.createElement('div');
   Progress.id = "progress_bar";
   var container = document.getElementById("writtenContent");
   writtenContent.appendChild(Progress);
 
-// }
-
-  });
-});
-
-
+  // var Percent = document.createElement('div');
+  // Percent.class = "percent";
+  // var container = document.getElementById("progress_bar");
+  // progress_bar.appendChild(Percent);
 
 
-
-
-
+}
