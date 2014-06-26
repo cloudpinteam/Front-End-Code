@@ -9,11 +9,11 @@ $(document).ready(function(){
     $("#upload").fadeOut(500);
     $(this).text("Upload more").fadeIn();
  	
-	// document.getElementById("icon").src = "img/grayIcon.png";
- //    $("#icon").fadeIn(500);
+	 document.getElementById("icon").src = "img/grayIcon.png";
+    $("#icon").fadeIn(500);
 		
 
-		// $("#newImg").fadeIn(500);
+		 $("#newImg").fadeIn(500);
 
 
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 
 
-    // $("#newImage").fadeIn(500);
+     $("#newImage").fadeIn(500);
 
 
    
