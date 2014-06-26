@@ -4,10 +4,10 @@ $(document).ready(function(){
     
   $("#upload").click(function(){
     $("h1").fadeOut(500);
-    $("h2").fadeOut(500);
+    // $("h2").fadeOut(500);
     $("#icon").fadeOut(500);
     $("#upload").fadeOut(500);
-    // $(this).text("Upload more").fadeIn();
+
  	
 	 document.getElementById("icon").src = "img/grayIcon.png";
     $("#icon").fadeIn(500); //this creates the gray icon pin
@@ -17,21 +17,26 @@ $(document).ready(function(){
     newButton1.innerHTML = "Upload more";
     var buttonParent = document.getElementById("containerButton");
     newButton1.id = "uploadMore";
-    containerButton.appendChild(newButton1);
+    buttonParent.appendChild(newButton1);
 
 
 		var newButton = document.createElement('button'); // this creates the "done button"
     newButton.innerHTML = "Done";
     var buttonParent = document.getElementById("containerButton");
 		newButton.id = "done";
-		containerButton.appendChild(newButton);
+		buttonParent.appendChild(newButton);
 
+
+// function createProgressBar () {
+  var Progress = document.createElement('div');
+  Progress.id = "progress_bar";
+  var container = document.getElementById("writtenContent");
+  writtenContent.appendChild(Progress);
+
+// }
 
   });
 });
-
-
-   
 
 
 
