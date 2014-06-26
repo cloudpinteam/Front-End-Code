@@ -1,3 +1,5 @@
+
+
 body {
   padding-top: 50px;
   background-color: white;
@@ -96,12 +98,15 @@ a{
 
 #GoPro{
 	color:#36bdef;
-	margin-right: 0%;	
+	margin-right: 0%;
+	margin-top: 10px;
+	margin-right: 15px;	
+
 
 }
 #GoPro:hover{
 	color:#2c9bc4;
-	margin-right: 0%;	
+	margin-right: 15px;	
 
 }
 
@@ -562,9 +567,10 @@ nav #signup a {
   font-weight: bold;
   padding: 0 8px;
   text-decoration: none;
-  color: #444;
+  color: rgba(105,134,145,1);
   text-shadow: 0 1px 0 #fff;
   margin-top:10px; 
+  font-family: "Brandon Text";
 }
 
 nav #signup a {
@@ -679,7 +685,10 @@ nav li #login-content {
 }
 
 
-
+#download {
+	color: #36bcee; /* text color */
+	font-family: "Brandon Text";
+}
 
 
 
