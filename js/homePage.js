@@ -3,26 +3,44 @@ $(document).ready(function(){
     animate({top: 50, opacity: 1}, 1200);
     
   $("#upload").click(function(){
-
     $("h1").fadeOut(500);
+    // $("h2").fadeOut(500);
     $("#icon").fadeOut(500);
     $("#upload").fadeOut(500);
-    $(this).text("Upload more").fadeIn();
+
  	
 	 document.getElementById("icon").src = "img/grayIcon.png";
+<<<<<<< HEAD
     $("#icon").fadeIn(500);
 		
 
 		 $("#newImg").fadeIn(500);
+=======
+    $("#icon").fadeIn(500); //this creates the gray icon pin
+		
+
+    var newButton1 = document.createElement('button'); //this creates the "upload more" button
+    newButton1.innerHTML = "Upload more";
+    var buttonParent = document.getElementById("containerButton");
+    newButton1.id = "uploadMore";
+    buttonParent.appendChild(newButton1);
+>>>>>>> FETCH_HEAD
 
 
+		var newButton = document.createElement('button'); // this creates the "done button"
+    newButton.innerHTML = "Done";
+    var buttonParent = document.getElementById("containerButton");
+		newButton.id = "done";
+		buttonParent.appendChild(newButton);
 
-		// var newImage = document.createElement('img');
-		// newImage.id = "newImg";
-		// newImage.setAttribute("src", "img/grayIcon.png");
 
-		// document.body.appendChild(newImage);
+// function createProgressBar () {
+  var Progress = document.createElement('div');
+  Progress.id = "progress_bar";
+  var container = document.getElementById("writtenContent");
+  writtenContent.appendChild(Progress);
 
+// }
 
   });
 });
@@ -31,6 +49,7 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
    
 
 
@@ -45,5 +64,7 @@ $(document).ready(function(){
 
 
 
+=======
+>>>>>>> FETCH_HEAD
 
 
