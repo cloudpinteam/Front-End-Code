@@ -9,16 +9,20 @@ $(document).ready(function(){
     $("#upload").fadeOut(500);
     document.getElementById("icon").src = "img/grayIcon.png";
     $("#icon").fadeIn(500); //this creates the gray icon pin
+
+
+
     var newButton1 = document.createElement('button'); //this creates the "upload more" button
     newButton1.innerHTML = "Upload more";
     var buttonParent = document.getElementById("containerButton");
     newButton1.id = "uploadMore";
-    buttonParent.appendChild(newButton1);
+    containerButton.appendChild(newButton1);
+
     var newButton = document.createElement('button'); // this creates the "done button"
     newButton.innerHTML = "Done";
     var buttonParent = document.getElementById("containerButton");
-    newButton.id = "done";
-    buttonParent.appendChild(newButton);
+    newButton.id = "done1";
+    containerButton.appendChild(newButton);
   });
 
 
