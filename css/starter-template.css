@@ -518,7 +518,9 @@ background-color: #ecf0f5; /* layer fill content */
     width: 0;
   }
 
-
+#lefticon {
+	width:30px;
+}
 
 
 
