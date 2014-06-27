@@ -49,10 +49,3 @@ function createProgressBar() {
   var container = document.getElementById("writtenContent");
   writtenContent.appendChild(Progress);
 }
-
-
-
-
-
-
-
