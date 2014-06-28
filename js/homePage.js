@@ -10,7 +10,7 @@ $(document).ready(function(){
     document.getElementById("icon").src = "img/grayIcon.png";
     $("#icon").fadeIn(500); //this creates the gray icon pin
 
-    var text = document.createElement('h1'); //this creates new text on  click
+    var text = document.createElement('h1'); //this creates new text on click
     text.innerHTML = "(Everything you uploaded is encrypted and never stored on the web)";
     text.id = "encryption";
     var container1 = document.getElementById("writtenContent");
@@ -22,12 +22,18 @@ $(document).ready(function(){
     newButton1.id = "uploadMore";
     containerButton.appendChild(newButton1);
 
-    var newButton = document.createElement('button'); // this creates the "done button"
-    newButton.innerHTML = "Done";
-    var buttonParent = document.getElementById("containerButton");
-    newButton.id = "done1";
-    containerButton.appendChild(newButton);
+    var newButton2 = document.createElement('button'); // this creates the "done button"
+    newButton2.innerHTML = "Done";
+    var buttonParent = document.getElementById("newButton");
+    newButton2.id = "done1";
+    newButton.appendChild(newButton2);
   });
+
+
+
+
+
+});
 
 
  $('#trigger').click(function(){
@@ -36,13 +42,13 @@ $(document).ready(function(){
     
     if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
       else $(this).find('span').html('&#x25BC;')
-    });
+  });
 
 
+  $("#newButton").click(function(){
+    window.location = "successfulPin.html";
+  });
 
-
-
-});
 
 
 // function createProgressBar() {
