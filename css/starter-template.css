@@ -615,18 +615,19 @@ nav li #login-content {
 /*--------------------*/
 
 #inputs input {
-  background: #fff;
+/*  background: #fff;*/
   padding: 6px 5px;
-  margin: 0 0 20px 0;
+/*  margin: 0 0 20px 0;*/
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 1px 1px #ccc inset;
   margin-top:5px;
+  margin-left:15px;
 }
 
 #inputs input:focus {
-  background-color: #fff;
+/*  background-color: #fff;*/
   border-color: #35bdef;
   outline: none;
   box-shadow: 0 0 0 1px #35bdef inset;
