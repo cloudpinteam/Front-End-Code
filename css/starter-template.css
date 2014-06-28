@@ -815,3 +815,12 @@ margin-left: 10px;
   outline: none;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
 }  
+
+#encryption {
+	color: #a5a9ab; /* text color */
+	font-family: "Brandon Text";
+	font-weight: lighter;
+	font-size:15px;
+}
+
+

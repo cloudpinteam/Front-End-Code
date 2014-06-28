@@ -10,7 +10,11 @@ $(document).ready(function(){
     document.getElementById("icon").src = "img/grayIcon.png";
     $("#icon").fadeIn(500); //this creates the gray icon pin
 
-
+    var text = document.createElement('h1'); //this creates new text on  click
+    text.innerHTML = "(Everything you uploaded is encrypted and never stored on the web)";
+    text.id = "encryption";
+    var container1 = document.getElementById("writtenContent");
+    container1.appendChild(text);
 
     var newButton1 = document.createElement('button'); //this creates the "upload more" button
     newButton1.innerHTML = "Upload more";
@@ -26,25 +30,24 @@ $(document).ready(function(){
   });
 
 
-
  $('#trigger').click(function(){
     $(this).next('.dropdown-menu').slideToggle();
     $(this).toggleClass('active');          
     
     if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
       else $(this).find('span').html('&#x25BC;')
-    })
+    });
 
 
 
 
 
-})
+});
 
 
-function createProgressBar() {
-  var Progress = document.createElement('div');
-  Progress.id = "progress_bar";
-  var container = document.getElementById("writtenContent");
-  writtenContent.appendChild(Progress);
-}
+// function createProgressBar() {
+//   var Progress = document.createElement('div');
+//   Progress.id = "progress_bar";
+//   var container = document.getElementById("writtenContent");
+//   writtenContent.appendChild(Progress);
+// }
