@@ -622,6 +622,7 @@ nav li #login-content {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 1px 1px #ccc inset;
+  margin-top:5px;
 }
 
 #inputs input:focus {
@@ -789,3 +790,27 @@ nav li #login-content {
 	margin-bottom: -70px;
 }
 
+#submit{
+background-color: #35bdef;
+background-image: linear-gradient(top, #e97171, #d14545);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+text-shadow: 0 1px 0 rgba(0,0,0,.5);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+border: 1px solid #11abe5;
+float: left;
+height: 30px;
+padding: 0;
+width: 300px;
+cursor: pointer;
+font: bold 14px Arial, Helvetica;
+color: #fff;
+outline:none;
+margin-left: 10px;
+}
+
+#submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}  

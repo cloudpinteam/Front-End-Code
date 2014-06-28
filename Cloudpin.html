@@ -14,6 +14,10 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+
+
+    
+
   <script type="text/javascript"> //allows you to upload
     function performClick(node) {
     var evt = document.createEvent("MouseEvents");
@@ -30,6 +34,20 @@
   </script>
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </head>
@@ -60,47 +78,35 @@
 
         <div class="collapse navbar-collapse">
         
-           <!--  <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="#" id="GoPro" >
-                  Go Pro
-                </a>
-              </li>   -->
-           
-         
-
-      <nav>
-        <ul>
-
-          <li id = "GoPro">
-            <a href = ""> Go Pro </a>
-          </li>
-
-          <li id="login">
-            <a id="login-trigger" href="#">
-              Sign in
-            </a>
-            <div id="login-content">
-              <form>
-                <fieldset id="inputs">
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href = "" style = "color:#428bca; float:left;"> Go Pro </a>
+            <a href="#" class="dropdown-toggle" id="register" data-toggle="dropdown" style="color:rgba(105,134,145,1);float:left;">Sign in</a>
+            <div class="dropdown-menu" style="width: 330px; height:160px; background:rgba(0,0,0,0.03); margin-top:10px;">
+                <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+                 <fieldset id="inputs" style = "margin-left:10px;">
                   <input id="username" type="email" name="Email" placeholder="Email" required>   
                   <input id="password" type="password" name="Password" placeholder="Password" required>
                 </fieldset>
                 <fieldset id="actions">
                   <input type="submit" id="submit" value="Sign in">
                 </fieldset>
-              </form>
-            </div>                     
-          </li>
-        </ul>
+               </form>
+            </div> <!-- /dropdown-menu -->
+        </li> <!-- /dropdown -->
+        <!--(here goes another dropdown)-->
+    </ul>
+</div><!-- /navbar-collapse -->
 
-       
+           
+         
 
-      </nav>
+  
 
   </div> 
 
- </ul>
+
 
 
 
