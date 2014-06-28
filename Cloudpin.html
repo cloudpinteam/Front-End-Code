@@ -91,11 +91,18 @@
             <h1>The easiest way to share <div id="rotate"> <div>content.</div> <div> files. </div> <div> media. </div></div></h1>
             <h2> Quickly share files with an easy to remember PIN. </h2>
         </div>    
+
+        <span id ="bar">
+        </span>
+
+        <span id = "cancel">
+        </span>
+
+
+        <br>
           <span id = "containerButton">
             <button id="upload" onclick="performClick(document.getElementById('theFile')); createProgressBar();">Click here to upload </button>
           </span>
-
-
           <span id = "newButton"></span>
 
            <div id = "writtenContent"></div>  
@@ -107,7 +114,7 @@
           <a href id="privacy"><span>Privacy</span></a>
           <a href id="contact"><span>Contact</span></a>
         </footer>
-      <input type="file" id="theFile" style="display: none;"/>
+      <input type="file" id="theFile" style="display: none;" name= "files[]" multiple/>
 
       </div>
     </div><!-- /.container -->

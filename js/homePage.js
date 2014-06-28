@@ -29,10 +29,6 @@ $(document).ready(function(){
     newButton.appendChild(newButton2);
   });
 
-
-
-
-
 });
 
 
@@ -45,15 +41,25 @@ $(document).ready(function(){
   });
 
 
-  $("#newButton").click(function(){
+  $("#newButton").click(function(){ //this redirects to the successful pin page
     window.location = "successfulPin.html";
   });
 
 
 
-// function createProgressBar() {
-//   var Progress = document.createElement('div');
-//   Progress.id = "progress_bar";
-//   var container = document.getElementById("writtenContent");
-//   writtenContent.appendChild(Progress);
-// }
+function createProgressBar() {
+  var Progress = document.createElement('div');
+  Progress.id = "progress_bar";
+  var container = document.getElementById("bar");
+  bar.appendChild(Progress);
+
+  var cancelIcon = document.createElement('img'); //creates the cancel icon
+  cancelIcon.src = "img/cancel.png";
+  cancelIcon.id = "cancel";
+  var box = document.getElementById('cancel');
+  cancel.appendChild(cancelIcon);
+
+}
+
+
+
