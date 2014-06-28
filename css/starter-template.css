@@ -402,7 +402,7 @@ footer {
     margin-top: 30px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     font-size: 14px;
    /* clear: both;*/
     opacity: 1;
@@ -829,5 +829,6 @@ margin-left: 10px;
 #cancel {
 	width:25px;
 	margin-top: -8px;
+	margin-left:25px;
 }
 

@@ -29,6 +29,8 @@ $(document).ready(function(){
     newButton.appendChild(newButton2);
   });
 
+    
+
 });
 
 
@@ -58,7 +60,16 @@ function createProgressBar() {
   cancelIcon.id = "cancel";
   var box = document.getElementById('cancel');
   cancel.appendChild(cancelIcon);
+}  
 
+var _submit = document.getElementById('upload'), 
+_file = document.getElementById("theFile"), 
+_progress = document.getElementById('progress_bar');
+
+upload.addEventListener('click', upload);
+
+if(theFile.files.length === 0){ //makes sure that the person uploads something
+    return;
 }
 
 
