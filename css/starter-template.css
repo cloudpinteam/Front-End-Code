@@ -152,7 +152,7 @@ section h1 {
 	padding-left: 14%;
 	padding-right:14%;
 
-	margin-top:1.4%;
+	margin-top:-10px;
 	margin-left:0%;
 
 
@@ -217,9 +217,9 @@ section h2 span{
 }
 
 footer {
-	margin-top: 8%;
+	margin-top: 230px;
 	font-family: "Brandon Text";
-	color: #2a2c2d;
+	color: #2b2d2e;
 	margin-left: 0%;
 
 
@@ -229,26 +229,34 @@ footer {
 	margin-left: -1%;
 	margin-right: 3%;
 	font-weight: lighter;
+	color: #2b2d2e;
+
 }
 
 #about {
 	margin-right: 3%;
 	font-weight: lighter;
+	color: #2b2d2e;
+
 }
 
 #blog {
 	font-weight: lighter;
+	color: #2b2d2e;
+
 
 }
 
 #privacy {
 	margin-left: 3%;
 	font-weight: lighter;
+	color: #2b2d2e;
 }
 
 #contact{
 	margin-left: 3%;
 	font-weight: lighter;
+	color: #2b2d2e;
 }
 
 
@@ -698,7 +706,7 @@ nav li #login-content {
 
 #check {
 	width:80px;
-	margin-top: -40px;
+	/*margin-top: -40px; commented out to make page smaller*/ 
 }
 
 #extra {
