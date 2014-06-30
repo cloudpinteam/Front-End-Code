@@ -34,16 +34,10 @@
 
 </head>
 
-
-
-
-
-  </head>
   <!--Test-->
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -57,30 +51,26 @@
             </div>
           </form>
         </div> <!--end navbar-header-->
-
         <div class="collapse navbar-collapse">
-        
-<div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href = "goPro.html" style = "color:#428bca; float:left;"> Go Pro </a>
-            <a id = "trigger" href="#" class="dropdown-toggle" id="register" data-toggle="dropdown" style="color:rgba(105,134,145,1);float:left;">Sign in</a>
-            <div class="dropdown-menu" style="width: 330px; height:180px; margin-top:10px; box-shadow:none; border:none;">
-                <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
-                 <fieldset id="inputs" style = "margin-left:10px; background: rgba(0,0,0,0.03);width: 330px;clear: both; border:1px solid rgba(0,0,0,0.16); box-shadow: 0px 5px 5px rgba(0,0,0,0.03);">
-                  <input id="username" type="email" name="Email" style="margin-top:10px;" placeholder="Email" required>   
-                  <input id="password" type="password" name="Password" style="margin-top:15px;" placeholder="Password" required>
-                  <input type="submit" id="submit" value="Sign in" style = "border: 1px solid #35bdef; margin-top:15px; margin-bottom:15px;">
-                </fieldset>
-               </form>
-            </div> <!-- /dropdown-menu -->
-        </li> <!-- /dropdown -->
-        <!--(here goes another dropdown)-->
-    </ul>
-</div><!-- /navbar-collapse -->
-
-  </div> 
-
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href = "goPro.html" style = "color:#428bca; float:left;"> Go Pro </a>
+                      <a id = "trigger" href="" class="dropdown-toggle" id="register" data-toggle="dropdown" style="color:rgba(105,134,145,1);float:left;">Sign in</a>
+                      <div class="dropdown-menu" style="width: 330px; height:180px; margin-top:10px; box-shadow:none; border:none;">
+                          <form style="margin: 0px" accept-charset="UTF-8" action="home.html" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+                           <fieldset id="inputs" style = "margin-left:10px; background: rgba(0,0,0,0.03);width: 330px;clear: both; border:1px solid rgba(0,0,0,0.16); box-shadow: 0px 5px 5px rgba(0,0,0,0.03);">
+                            <input id="username" type="email" name="Email" style="margin-top:10px;" placeholder="Email" required>   
+                            <input id="password" type="password" name="Password" style="margin-top:15px;" placeholder="Password" required>
+                            <input type="submit" id="submit" value="Sign in" style = "border: 1px solid #35bdef; margin-top:15px; margin-bottom:15px;">
+                          </fieldset>
+                         </form>
+                      </div> <!-- /dropdown-menu -->
+                  </li> <!-- /dropdown -->
+                  <!--(here goes another dropdown)-->
+              </ul>
+          </div><!-- /navbar-collapse -->
+        </div> 
       </div>
     </div>
 
@@ -92,21 +82,14 @@
           <h1>The easiest way to share <div id="rotate"> <div>content.</div> <div> files. </div> <div> media. </div></div></h1>
           <h2> Quickly share files with an easy to remember PIN. </h2>
         </div>    
-
-        <span id ="bar">
-        </span>
-
-        <span id = "cancel">
-        </span>
-
-
+        <span id ="bar"></span>
+        <span id = "cancel"></span>
         <br>
-          <span id = "containerButton">
-            <button id="upload" onclick="performClick(document.getElementById('theFile')); createProgressBar(); ">Click here to upload </button>
-          </span>
-          <span id = "newButton"></span>
-
-           <div id = "writtenContent"></div>  
+        <span id = "containerButton">
+          <button id="upload" onclick="performClick(document.getElementById('theFile')); createProgressBar(); ">Click here to upload </button>
+        </span>
+        <span id = "newButton"></span>
+        <div id = "writtenContent"></div>  
         </section>
         <footer>
           <a href id= "how"> <span>How It Works</span></a>
@@ -115,21 +98,9 @@
           <a href id="privacy"><span>Privacy</span></a>
           <a href id="contact"><span>Contact</span></a>
         </footer>
-      <input type="file" id="theFile" style="display: none;" name= "files[]" multiple/>
-
-
-
-
-
-
-
+        <input type="file" id="theFile" style="display: none;" name= "files[]" multiple/>
       </div>
     </div><!-- /.container -->
-
-
-   
-
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -137,8 +108,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script> 
-        <script src="js/homePage.js"></script>
-        <script src="js/transition.js"></script>
-
+    <script src="js/homePage.js"></script>
+    <script src="js/transition.js"></script>
   </body>
 </html>
