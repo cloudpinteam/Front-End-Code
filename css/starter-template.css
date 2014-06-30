@@ -927,3 +927,28 @@ font-family: "Helvetica Neue";
 	width:30px;
 	margin-top:6px;
 }
+
+.circle {
+	width:15px;
+	margin-top:-5px;
+	margin-right:5px;
+}
+
+#mypin {
+	outline:none;
+	border:none;
+	background:white;
+	color:black;
+}
+
+#mypin:hover {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* border radius */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #6fa1cb; /* layer fill content */
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
