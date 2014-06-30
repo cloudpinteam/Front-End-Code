@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="css/normalize.css" rel="stylesheet">
+    <title>Cloudpin</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script type="text/javascript"> //allows you to upload
+    function performClick(node) {
+    var evt = document.createEvent("MouseEvents");
+    evt.initEvent("click", true, false);
+    node.dispatchEvent(evt);
+    }   
+  </script>
+
+  <script>
+    function myFunction()
+    {
+    document.getElementById("idd").style.visibility="visible";
+    }
+  </script>
+
+  
+  
 
 </head>
 
 
-<body>
- <h1>Hello</h1>
-</body>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img id = "homeIcon" src = "img/Layer-13.png">
+          <form method = "get" action="searchPage.html" class="navbar-form navbar-right">
+            <div class="input-group">
+              <input type="Search" placeholder="Search by PIN" class="form-control search-bar" name = "pin"/>
+            </div>
+          </form>
+        </div> <!--end navbar-header-->
+        <div class="collapse navbar-collapse">
+         <!--  <div class="navbar-collapse collapse"> -->
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href = "home.html" style = "color:#428bca; float:left;">My Account</a>
+                    <a href = "Cloudpin.html" style="color:rgba(105,134,145,1);float:left;">Sign out</a>  
+                  </li> <!-- /dropdown -->
+                  <!--(here goes another dropdown)-->
+              </ul>
+          </div><!-- /navbar-collapse -->
+        </div> 
+      </div>
+    </div>
 
+    <div class="container container2">
+      <div class="starter-template">
+        <section>
+        
+
+
+
+        </section>
+        <footer>
+     
+        </footer>
+        <input type="file" id="theFile" style="display: none;" name= "files[]" multiple/>
+      </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+    <script src="js/homePage.js"></script>
+    <script src="js/transition.js"></script>
+  </body>
 </html>

@@ -921,3 +921,9 @@ font-family: "Helvetica Neue";
 	border:3px solid #ebeded;;
 	height:320px;
 }
+
+#homeIcon {
+	float:left;
+	width:30px;
+	margin-top:6px;
+}
