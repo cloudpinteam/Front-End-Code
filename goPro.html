@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="css/normalize.css" rel="stylesheet">
+    <title>Cloudpin</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <form method = "get" action="searchPage.html" class="navbar-form navbar-right">
+            <div class="input-group">
+              <input type="Search" placeholder="Search by PIN" class="form-control search-bar" name = "pin"/>
+            </div>
+          </form> -->
+        </div> <!--end navbar-header-->
+        <div class="collapse navbar-collapse">
+			<div class="navbar-collapse collapse">
+			    <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href = "goPro.html" style = "color:#428bca; float:left;"> Go Pro </a>
+			            <a id = "trigger" href="#" class="dropdown-toggle" id="register" data-toggle="dropdown" style="color:rgba(105,134,145,1);float:left;">Sign in</a>
+			            <div class="dropdown-menu" style="width: 330px; height:180px; margin-top:10px; box-shadow:none; border:none;">
+			                <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+			                 <fieldset id="inputs" style = "margin-left:10px; background: rgba(0,0,0,0.03);width: 330px;clear: both; border:1px solid rgba(0,0,0,0.16); box-shadow: 0px 5px 5px rgba(0,0,0,0.03);">
+			                  <input id="username" type="email" name="Email" style="margin-top:10px;" placeholder="Email" required>   
+			                  <input id="password" type="password" name="Password" style="margin-top:15px;" placeholder="Password" required>
+			                  <input type="submit" id="submit" value="Sign in" style = "border: 1px solid #35bdef; margin-top:15px; margin-bottom:15px;">
+			                </fieldset>
+			               </form>
+			            </div> <!-- /dropdown-menu -->
+			        </li> <!-- /dropdown -->
+			        <!--(here goes another dropdown)-->
+			    </ul>
+			</div><!-- /navbar-collapse -->
+  		</div> 
+      </div>
+    </div>
+
+    <div class="container container2">
+      <div class="starter-template" style = "margin-top:-50px;">
+        <section>
+        
+	        <div class = "row">
+	        	<div class="col-md-4">
+	        		<div class = "box" style = "float:left; margin-top:50px;">
+		        		Basic<br>
+		        		<span class = "special">$5/month<br><br><hr>
+		        		Send 2GB files </span> <br>
+		        		Up to 10GB Storage <br>
+		        		<span class = "special">Choose expiration </span><br>
+		        		<button id = "basic">Get Started</button>
+		        	</div>	
+	        	</div>
+  				<div class="col-md-4">
+  					<div class = "box" style = "float:left;margin-top:50px;">
+	  					Pro<br>
+	  					<span class = "special">$10/month<br><br><hr>
+	  					Send 5GB files</span><br>
+		        		Up to 50GB Storage<br>
+		        		<span class = "special">Choose expiration <br>
+		        		Detailed Analytics </span> <br>
+		        		<button id = "pro1">Go Pro</button>
+		        	</div>	 
+  				</div>
+  				<div class="col-md-4">
+  					<div class = "box" style = "float:left;margin-top:50px;">
+	  					Business<br>
+	  					<span class = "special">$10/user<br>minimum 5 users <hr>
+	  					Send 5GB files </span> <br>
+		        		Unlimited Storage<br>
+		        		<span class = "special">Choose expiration <br>
+		        		Detailed Analytics</span><br>
+		        		<button id = "business">More Info</button>
+		        	</div>	
+  				</div>
+	        </div>
+
+
+
+        </section>
+        <footer style = "margin-top:400px;">
+          <a href id= "how"> <span>How It Works</span></a>
+          <a href id= "about"> <span>About</span></a>
+          <a href id="blog"><span>Blog</span></a>
+          <a href id="privacy"><span>Privacy</span></a>
+          <a href id="contact"><span>Contact</span></a>
+        </footer>
+
+
+
+
+      </div>
+    </div><!-- /.container -->
+
+
+   
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+    <script src="js/homePage.js"></script>
+    <script src="js/transition.js"></script>
+
+	</body>
+</html>
