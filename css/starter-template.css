@@ -1093,3 +1093,27 @@ font-family: "Helvetica Neue";
 	width:60px;
 	margin-top:15px;
 }
+
+#uploadAccount {
+	float:right;
+	background-color:white;
+	outline:none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-background-clip: paddin-moz-border-radg;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	border:2px solid #eee;
+	padding-right:25px;
+	padding-left: 25px;
+	color: #798389;
+	font-size: 16px;
+
+
+}
+
+#arrow {
+	width:20px;
+	margin-right:10px;
+}
