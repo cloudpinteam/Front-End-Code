@@ -931,7 +931,7 @@ font-family: "Helvetica Neue";
 .circle {
 	width:15px;
 	margin-top:-5px;
-	margin-right:5px;
+	margin-right:10px;
 }
 
 #mypin {
@@ -942,13 +942,78 @@ font-family: "Helvetica Neue";
 }
 
 #mypin:hover {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; /* border radius */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
-	background-clip: padding-box; /* prevents bg color from leaking outside the border */
-	background-color: #6fa1cb; /* layer fill content */
-	padding-top: 10px;
-	padding-bottom: 10px;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 70px;
 }
+
+#public {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#public:hover{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 30px;	
+}
+
+#private {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#private:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 20px;	
+}
+
+
+#onlyMe {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#onlyMe:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 30px;	
+}
+
