@@ -6,7 +6,8 @@ body {
   background-color: white;
 }
 .starter-template {
-  padding: 120px 15px;
+ /* padding: 120px 15px;*/
+ padding-top:120px;
   text-align: center;
 }
 
@@ -421,7 +422,7 @@ footer {
 }*/
 
 .fileGrouping {
-    border:thin black solid;
+    border:none;
     
     height:32px;    
     width:100%;
@@ -963,12 +964,14 @@ font-family: "Helvetica Neue";
 	background-clip: padding-box; /* prevents bg color from leaking outside the border */
 	background-color: #6fa1cb; /* layer fill content */
 	padding-left: 10px;
-	padding-right: 70px;
+	padding-right: 112px;
+	color:white;
 }
 
 #public {
 	margin-top:10px;
 	float:left;
+	clear:both;
 	outline:none;
 	background:white;
 	color:black;
@@ -984,7 +987,8 @@ font-family: "Helvetica Neue";
 	background-clip: padding-box; 
 	background-color: #6fa1cb; 
 	padding-left: 10px;
-	padding-right: 30px;	
+	padding-right: 76px;
+	color:white;	
 }
 
 #private {
@@ -1005,7 +1009,8 @@ font-family: "Helvetica Neue";
 	background-clip: padding-box; 
 	background-color: #6fa1cb; 
 	padding-left: 10px;
-	padding-right: 20px;	
+	padding-right: 73px;
+	color:white;	
 }
 
 
@@ -1027,6 +1032,64 @@ font-family: "Helvetica Neue";
 	background-clip: padding-box; 
 	background-color: #6fa1cb; 
 	padding-left: 10px;
-	padding-right: 30px;	
+	padding-right: 73px;
+	color:white;	
 }
 
+#inbox {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#inbox:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 83px;
+	color:white;	
+}
+
+
+#analytics {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#analytics:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 70px;
+	color:white;
+
+}
+
+#line {
+	float:left;
+	margin-top:20px;
+	border-top: 1px solid #eee;
+	width:180px;
+}
+
+.dropimg {
+	width:60px;
+	margin-top:15px;
+}

@@ -87,6 +87,13 @@ function showLocalFileUpload(files) {
     /* Read the selected files */
     var fileReaders = new Array();
     loadNextFile(fileReaders, files, 0);
+
+
+    $("#uploadMore").click(function(){ //upload more files
+
+    });
+
+
 }  
 //
 
@@ -104,6 +111,8 @@ function loadNextFile(fileReaders, files, i) {
             if (percentLoaded < 100) {
                 var progress = document.getElementsByClassName("percent")[0];
                 progress.style.width = percentLoaded + '%';
+                progress.innerHTML = percentLoaded + '%';
+
             }
         }
     }
@@ -112,12 +121,9 @@ function loadNextFile(fileReaders, files, i) {
         var progress = document.getElementsByClassName("percent")[0];
         var progressbar = document.getElementById("progress_bar");
         var cancelbar = document.getElementById("cancel");
-
-        // cancelbar.style.opacity = "0";
-
-        $("#cancel").fadeOut(2000);
+        $("#cancel").fadeOut(1500);
         progressbar.style.opacity = "0";
-        progress.style.opacity = "0"; //makes the number gone;
+        progress.style.opacity = "1.0";
         progress.style.width = "100%";
         progress.textContent = "100%";
         var curFileGrouping = document.getElementsByClassName("fileGrouping")[i];
@@ -146,11 +152,6 @@ function handleFileSelect(e) {
         showLocalFileUpload(files);
     }
 }
-
-// function btnColor(uploadMore, color) {
-//   var uploadmore = document.getElementById("uploadMore");  
-//   uploadmore.style.background-color = "red";
-// }
 
 
 

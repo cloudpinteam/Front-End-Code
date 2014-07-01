@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Yen Huang" content="">
 
     <link rel="css/normalize.css" rel="stylesheet">
     <title>Cloudpin</title>
@@ -13,7 +13,7 @@
     <link href="css/starter-template.css" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    <script src="js/dropzone.js"></script>
   <script type="text/javascript"> //allows you to upload
     function performClick(node) {
     var evt = document.createEvent("MouseEvents");
@@ -71,7 +71,7 @@
         <section>
           <div class = "row">
             <div class="col-md-4">
-              <div style = "float:left;margin-top:-30px;width:140px;">
+              <div style = "float:left;margin-top:-30px;width:180px;">
                 <div>My Profile<div>
                 <hr>
                 <button id = "mypin" style = "float:left;">My Pins</button>
@@ -81,11 +81,32 @@
                 <button id = "private"><img class = "circle" src= "img/red.png">Private&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
             
                 <button id = "onlyMe"><img class = "circle" src= "img/gray.png">Only Me&nbsp;&nbsp;</button>
-                <div style = "float:left; margin-top:10px;">Inbox</div>
-                <button id = "onlyMe"><img class = "circle" src= "img/gray.png">Only Me&nbsp;&nbsp;</button>
-                <div style = "float:left; margin-top:10px;">Analytics</div>
-                
+                <button id = "inbox" style = "float:left; margin-top:10px;">Inbox&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <button id = "analytics" style = "float:left; margin-top:10px;">Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+                <div id = "line"></div>
+
+
+
+
+                <div class="drops" id="drops" style = "float:left; border:2px dotted #eee; margin-top:30px;padding-left:15px;padding-right:15px;">
+                        <form action="/c42uploadfile" class="dropzone dz-clickable" method="POST" id="c42-uploadfile" style="opacity: 1;">
+                          
+                          <input id="c42path" type="hidden" name="path" value="">
+                          <div class="dz-message">
+                              <img class="dropimg" style = "padding-top:20px;" src="img/vector.png">
+                              <p class="dropp" style="opacity: 1; color: #798389; font-size:15px; margin-top:5px;">Drag & drop to upload</p>
+                              <p class="dropp2" style="opacity: 1; color: #798389; margin-top:-10px; font-size:15px; font-style: italic;color: #5babdf;padding-bottom:25px;">(or click)</p>
+                            </div>
+                        </form>
+                      </div>
+
+
+
+
+
               </div>  
+
             </div>
           <div class="col-md-4">
             <div style = "">
