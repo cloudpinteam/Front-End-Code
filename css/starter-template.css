@@ -399,46 +399,97 @@ footer {
 }
 
 
+/*##########*/
+#fileListSpan {
+    display:none;    
+}
 
+#fileListContainer {
+    max-height:288px;
+    margin:auto;
+    margin-top:32px;
+    overflow-y:auto;
+    width:80%;
+}
 
+.fileTableHeader {
+    background:#EEEEEE;
+    border:thin black solid;
+    font-weight:bold;
+    height:32px;
+    width:100%;
+}
 
+.fileGrouping {
+    border:thin black solid;
+    border-top:none;
+    height:32px;    
+    width:100%;
+}
 
+.fileName {
+    border-right:thin black solid;
+    height:32px;
+    float:left;
+    overflow:hidden;
+    width:60%;
+}
+.fileSize {
+    border-right:thin black solid;
+    height:32px;
+    float:left;
+    overflow:hidden;
+    width:20%;
+}
+.fileStatus {
+    height:32px;
+    float:left;
+    overflow:hidden;
+    width:20%;
+}
+/*##########*/
 
 #progress_bar {
-
-
-    margin-top: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    /*border: 1px solid #000;*/
-    font-size: 14px;
-   /* clear: both;*/
-    opacity: 1;
+    -moz-background-clip: padding;
+    -moz-border-radius: 10px;
     -moz-transition: opacity 1s linear;
     -o-transition: opacity 1s linear;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 10px;
     -webkit-transition: opacity 1s linear;
-    width:100%;
-
-
-    -moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px; /* border radius */
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box; /* prevents bg color from leaking outside the border */
-background-color: #ecf0f5; /* layer fill content */
-
-
+    /*    margin: 10px 0;*/
+    /*border: 1px solid #000;*/
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #ecf0f5; /* layer fill content */
+    border-radius: 10px; /* border radius */
+    border: 1px solid #000;
+    clear: both;
+    display:inline-block;
+    font-size: 14px;
+    margin-top: 30px;
+    opacity: 1;
+    padding:2px;
+    position:relative;
+    width:50%;
+   /* clear: both;*/
+/*    font-size: 14px;*/
   }
 
-#progress_bar.loading {
+#progress_bar .loading {
     opacity: 1.0;
   }
 
 #progress_bar .percent {
+    -moz-background-clip: padding;
+    -moz-border-radius: 10px;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 10px;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
     background-color: #99ccff;
-    height: auto;
-    width: 0;
+    border-radius: 10px; /* border radius */
+    height: 16px;   
+    text-align:left;
+    width: 0px;
   }
 
 
@@ -505,44 +556,6 @@ background-color: #ecf0f5; /* layer fill content */
 #lefticon {
 	width:30px;
 }
-
-
-
-
-
-
-
-
-#progress_bar {
-/*    margin: 10px 0;*/
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: 1px solid #000;
-/*    font-size: 14px;*/
-    clear: both;
-    opacity: 1;
-    -moz-transition: opacity 1s linear;
-    -o-transition: opacity 1s linear;
-    -webkit-transition: opacity 1s linear;
-    width:50%;
-
-    position:relative;
-    display:inline-block;
-  }
-
-#progress_bar.loading {
-    opacity: 1.0;
-  }
-
-#progress_bar .percent {
-    background-color: #99ccff;
-    height: auto;
-    width: 0;
-  }
-
-
-
-
 
 
 /* ---------------------------------------------*/
@@ -931,7 +944,7 @@ font-family: "Helvetica Neue";
 .circle {
 	width:15px;
 	margin-top:-5px;
-	margin-right:10px;
+	margin-right:5px;
 }
 
 #mypin {
@@ -942,78 +955,17 @@ font-family: "Helvetica Neue";
 }
 
 #mypin:hover {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* border radius */
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
-	background-clip: padding-box; 
-	background-color: #6fa1cb; 
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: #6fa1cb; /* layer fill content */
 	padding-left: 10px;
-	padding-right: 70px;
+	padding-right: 10px;
 }
 
 #public {
-	margin-top:10px;
-	float:left;
-	outline:none;
-	background:white;
-	color:black;
-	border:none;
+	margin-top:30px;
 }
-
-#public:hover{
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px; 
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box; 
-	background-color: #6fa1cb; 
-	padding-left: 10px;
-	padding-right: 30px;	
-}
-
-#private {
-	margin-top:10px;
-	float:left;
-	outline:none;
-	background:white;
-	color:black;
-	border:none;
-}
-
-#private:hover {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px; 
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box; 
-	background-color: #6fa1cb; 
-	padding-left: 10px;
-	padding-right: 20px;	
-}
-
-
-#onlyMe {
-	margin-top:10px;
-	float:left;
-	outline:none;
-	background:white;
-	color:black;
-	border:none;
-}
-
-#onlyMe:hover {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px; 
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box; 
-	background-color: #6fa1cb; 
-	padding-left: 10px;
-	padding-right: 30px;	
-}
-
