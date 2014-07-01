@@ -86,8 +86,18 @@
         <span id ="bar"></span>
         <span id = "cancel"></span>
         <br>
+        <span id="fileListSpan">
+            <div id="fileListContainer">
+                <div class="fileTableHeader">
+                    <div class="fileName">File Name</div>
+                    <div class="fileSize">File Size</div>
+                    <div class="fileStatus">File Status</div>
+                </div>
+            </div>
+        </span>
+        <br>
         <span id = "containerButton">
-          <button id="upload" onclick="performClick(document.getElementById('theFile')); createProgressBar(); ">Click here to upload </button>
+          <button id="upload" onclick="performClick(document.getElementById('theFiles'));">Click here to select files </button>
         </span>
         <span id = "newButton"></span>
         <div id = "writtenContent"></div>  
@@ -99,7 +109,7 @@
           <a href id="privacy"><span>Privacy</span></a>
           <a href id="contact"><span>Contact</span></a>
         </footer>
-        <input type="file" id="theFile" style="display: none;" name= "files[]" multiple/>
+        <input type="file" id="theFiles" style="display: none;" name= "files[]" multiple/>
       </div>
     </div><!-- /.container -->
 
