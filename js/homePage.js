@@ -69,19 +69,19 @@ function showLocalFileUpload(files) {
     /* Populate table with selected files */
     for (var i = 0, f; f = files[i]; i++) {
         var newFileGrouping = document.createElement("div");
-        newFileGrouping.setAttribute("class", "fileGrouping");
+        newFileGrouping.setAttribute("class", "fileGrouping"); //this is setting the body
         var newFileName = document.createElement("div");
         newFileName.setAttribute("class", "fileName");
         newFileName.textContent = f.name;
-        var newFileSize = document.createElement("div");
-        newFileSize.setAttribute("class", "fileSize");
-        newFileSize.textContent = Math.round(f.size/(1024*1024)) + " MB";
-        var newFileStatus = document.createElement("div");
-        newFileStatus.setAttribute("class", "fileStatus");
-        newFileStatus.textContent = "Queued";
+        // var newFileSize = document.createElement("div");
+        // newFileSize.setAttribute("class", "fileSize");
+        // newFileSize.textContent = Math.round(f.size/(1024*1024)) + " MB";
+        // var newFileStatus = document.createElement("div");
+        // newFileStatus.setAttribute("class", "fileStatus");
+        // newFileStatus.textContent = "Queued";
         newFileGrouping.appendChild(newFileName);
-        newFileGrouping.appendChild(newFileSize);
-        newFileGrouping.appendChild(newFileStatus);
+        // newFileGrouping.appendChild(newFileSize);
+        // newFileGrouping.appendChild(newFileStatus);
         document.getElementById("fileListContainer").appendChild(newFileGrouping);
     }    
     /* Read the selected files */
@@ -110,6 +110,14 @@ function loadNextFile(fileReaders, files, i) {
     
     function fileCompleted(e) {
         var progress = document.getElementsByClassName("percent")[0];
+        var progressbar = document.getElementById("progress_bar");
+        var cancelbar = document.getElementById("cancel");
+
+        // cancelbar.style.opacity = "0";
+
+        $("#cancel").fadeOut(2000);
+        progressbar.style.opacity = "0";
+        progress.style.opacity = "0"; //makes the number gone;
         progress.style.width = "100%";
         progress.textContent = "100%";
         var curFileGrouping = document.getElementsByClassName("fileGrouping")[i];
@@ -138,5 +146,11 @@ function handleFileSelect(e) {
         showLocalFileUpload(files);
     }
 }
+
+// function btnColor(uploadMore, color) {
+//   var uploadmore = document.getElementById("uploadMore");  
+//   uploadmore.style.background-color = "red";
+// }
+
 
 

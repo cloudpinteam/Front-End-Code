@@ -409,32 +409,32 @@ footer {
     margin:auto;
     margin-top:32px;
     overflow-y:auto;
-    width:80%;
+    width:50%;
 }
 
-.fileTableHeader {
+/*.fileTableHeader {
     background:#EEEEEE;
     border:thin black solid;
     font-weight:bold;
     height:32px;
     width:100%;
-}
+}*/
 
 .fileGrouping {
     border:thin black solid;
-    border-top:none;
+    
     height:32px;    
     width:100%;
 }
 
-.fileName {
+/*.fileName {
     border-right:thin black solid;
     height:32px;
     float:left;
     overflow:hidden;
-    width:60%;
-}
-.fileSize {
+    width:10%;
+}*/
+/*.fileSize {
     border-right:thin black solid;
     height:32px;
     float:left;
@@ -446,7 +446,7 @@ footer {
     float:left;
     overflow:hidden;
     width:20%;
-}
+}*/
 /*##########*/
 
 #progress_bar {
@@ -850,7 +850,7 @@ margin-left: 10px;
 #cancel {
 	width:25px;
 	margin-top: -8px;
-	margin-left:25px;
+	margin-left:5px;
 }
 
 #basic {
@@ -944,7 +944,7 @@ font-family: "Helvetica Neue";
 .circle {
 	width:15px;
 	margin-top:-5px;
-	margin-right:5px;
+	margin-right:10px;
 }
 
 #mypin {
@@ -955,17 +955,78 @@ font-family: "Helvetica Neue";
 }
 
 #mypin:hover {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; /* border radius */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* border radius */
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box; /* prevents bg color from leaking outside the border */
 	background-color: #6fa1cb; /* layer fill content */
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 70px;
 }
 
 #public {
-	margin-top:30px;
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
 }
+
+#public:hover{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 30px;	
+}
+
+#private {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#private:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 20px;	
+}
+
+
+#onlyMe {
+	margin-top:10px;
+	float:left;
+	outline:none;
+	background:white;
+	color:black;
+	border:none;
+}
+
+#onlyMe:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #6fa1cb; 
+	padding-left: 10px;
+	padding-right: 30px;	
+}
+
