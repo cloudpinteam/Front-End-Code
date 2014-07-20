@@ -65,6 +65,7 @@ function showLocalFileUpload(files) {
     cancelIcon.src = "img/cancel.png";
     cancelIcon.id = "cancel";
     cancel.appendChild(cancelIcon);
+
     
     /* Populate table with selected files */
     for (var i = 0, f; f = files[i]; i++) {
@@ -90,6 +91,13 @@ function showLocalFileUpload(files) {
 
 
     $("#uploadMore").click(function(){ //upload more files
+
+
+
+
+
+
+
 
     });
 
@@ -131,6 +139,7 @@ function loadNextFile(fileReaders, files, i) {
         if(i < files.length) {
             loadNextFile(fileReaders, files, i+1);
         }
+
     }    
     
     function fileError(e) {
